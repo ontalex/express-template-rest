@@ -18,3 +18,8 @@ export const Client = new Pool({
     user: PG_USER,
     password: PG_PASS,
 });
+await Client.connect()
+
+// Пример использования подключения
+// const result = await Client.query("select * from users;");
+// const result = await Client.query("select * from users where name = $1;", ["Alex"]);
