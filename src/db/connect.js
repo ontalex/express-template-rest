@@ -16,3 +16,7 @@ export const pool = createPool({
     password: PG_PASS,
     database: PG_DB
 }).promise()
+
+// Пример подключения
+// const [results, fields] = await connection.query("SELECT * FROM `users`;");
+// const [results, fields] = await connection.query("SELECT * FROM `users` WHERE `name` = ?;", ["Alex"]);
